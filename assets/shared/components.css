@@ -1,0 +1,23 @@
+/* Shared action components used by the home and product pages. */
+.sd-button{pointer-events:auto;display:inline-flex;align-items:center;justify-content:space-between;gap:32px;min-width:190px;min-height:54px;height:auto;padding:0 19px 0 22px;border:1px solid #eeefed;border-radius:4px;background:linear-gradient(135deg,#f1f1ed,#bfc1bc);box-shadow:inset 0 1px 0 #fff8,0 5px 18px #0003;color:var(--sd-ink);font-size:13px;font-weight:600;letter-spacing:1px;touch-action:manipulation}.sd-button-arrow{font-size:20px;font-weight:400;line-height:24px;padding-left:19px;border-left:1px solid #343c3833}.sd-button svg{box-sizing:content-box;width:20px;height:24px}.sd-button:focus-visible{outline:2px solid var(--sd-focus);outline-offset:5px}.sd-button:active{background:#bfc4bb;box-shadow:inset 0 2px 5px #0002}
+@media(max-width:700px){.sd-button{min-height:52px;min-width:180px;font-size:12px;gap:28px}}
+
+/* One hero hierarchy and footer for the brand and all product pages. */
+.sd-hero-copy .sd-product-name{font-size:clamp(21px,2vw,27px);line-height:1.3;font-weight:500;letter-spacing:-.035em;color:inherit;margin:0 0 22px}
+.sd-hero-copy .sd-hero-claim{font-size:clamp(48px,5.2vw,72px);line-height:1.18;font-weight:500;letter-spacing:-.055em;white-space:normal;margin:0 0 32px}
+.sd-hero-copy .sd-hero-claim br{display:initial}
+footer.sd-footer{box-sizing:border-box;max-width:1440px;margin:0 auto;padding:35px clamp(24px,5vw,80px);display:flex;align-items:center;justify-content:space-between;gap:24px;border-top:1px solid #ffffff20;background:#08090a;color:#eeece6;font-family:Arial,"Microsoft YaHei",sans-serif;letter-spacing:0}
+.sd-footer .sd-footer-brand{font-size:24px;font-weight:650;letter-spacing:-1.2px;color:#eeece6}.sd-footer>span,.sd-footer>a:last-child{font-size:11px;color:#999da1}
+@media(max-width:700px){.sd-hero-copy .sd-product-name{font-size:22px;margin-bottom:15px}.sd-hero-copy .sd-hero-claim{font-size:46px;line-height:1.18;margin-bottom:24px}footer.sd-footer{padding:28px 7%;flex-wrap:wrap;gap:16px}.sd-footer .sd-footer-brand{font-size:21px}.sd-footer>span{display:block;order:3;flex-basis:100%}}
+.sd-footer>a:last-child{margin-left:0}
+
+/* Shared site navigation: identical structure, alignment and motion on every page. */
+header.sd-header{position:relative;top:auto;left:auto;z-index:10;box-sizing:border-box;width:100%;max-width:1440px;height:88px;margin:0 auto;padding:0 clamp(24px,5vw,80px);display:flex;align-items:center;justify-content:space-between;background:#08090a;color:#eeece6;border:0;border-bottom:1px solid #ffffff20;font-family:Inter,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif}
+.sd-header .sd-brand{display:inline-flex;align-items:center;gap:8px;font-size:24px;font-weight:650;line-height:1.2;letter-spacing:-1.2px;color:#eeece6;text-decoration:none}
+
+.sd-header .sd-nav{display:flex;align-items:center;gap:34px;font-size:13px;font-weight:400;line-height:1.5;letter-spacing:0}
+.sd-header .sd-nav a{color:#b1b3b6;text-decoration:none;transition:color var(--sd-fast) var(--sd-ease)}
+.sd-header .sd-nav a:hover{color:#fff}.sd-header a:focus-visible{outline:2px solid #eee;outline-offset:6px}
+@media(max-width:700px){header.sd-header{height:72px;padding:0 6%}.sd-header .sd-brand{font-size:21px}.sd-header .sd-nav{gap:22px;font-size:12px}}
+@media(prefers-reduced-motion:reduce){.sd-header .sd-nav a{transition:none}}
+html{scrollbar-gutter:stable}

@@ -1,0 +1,2 @@
+/* Shared design primitives. Page files own layout, never motion values. */
+:root{--sd-bg:#050505;--sd-paper:#eeece6;--sd-ink:#171a18;--sd-muted:#a3a39b;--sd-fast:180ms;--sd-enter:480ms;--sd-ease:ease;--sd-ease-out:cubic-bezier(.22,1,.36,1);--sd-focus:#f0ead9;--sd-link-hover:#fff;--sd-font:Arial,"Microsoft YaHei",sans-serif}body{font-family:var(--sd-font)}
